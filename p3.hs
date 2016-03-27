@@ -1,7 +1,7 @@
 module Factor where
 
-import Data.Numbers.Primes
-import Data.List
+import           Data.List
+import           Data.Numbers.Primes
 
 main = print $ factor 165465413216549875446465432163
 

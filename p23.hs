@@ -1,5 +1,5 @@
-import Data.Set (Set, fromList, member)
-import Data.List (nub)
+import           Data.List (nub)
+import           Data.Set  (Set, fromList, member)
 
 main = print $ sum $ filter (not . sumOfTwoAbundant) $ takeWhile (<= 28123) [1..]
 

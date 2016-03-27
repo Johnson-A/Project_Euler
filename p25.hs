@@ -1,4 +1,4 @@
-import Data.List
+import           Data.List
 
 main = print $ findIndex (>= 10 ^ 999) fibs
 

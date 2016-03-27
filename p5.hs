@@ -1,4 +1,4 @@
-import Prelude hiding (gcd, lcm)
+import           Prelude hiding (gcd, lcm)
 
 main = print $ foldl lcm 1 [1..100]
 
