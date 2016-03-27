@@ -1,8 +1,5 @@
-main = putStrLn $ show $ problem_1 999
+main = print $ sum [x | x <- [1..999], divides x 3 || divides x 5]
 
-problem_1 0 = 0
-problem_1 num = if xor (divides num 3) (divides num 5) then num + rest else rest
-    where rest = problem_1 (num - 1)
+divides n d = n `mod` d == 0
 
-divides num div = num `mod` div == 0
-xor a b = a || b && not(a && b)
+xor a b = (a || b) && not(a && b)
